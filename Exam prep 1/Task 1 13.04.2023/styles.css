@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font: 14px/1.5 'Inter', sans-serif;
+}
+section{
+    height: 100vh;
+}
+.background_image {position:absolute;
+    top:0;
+    left:0;
+    z-index: -1;}
+ul li:before {
+ content: '✓'; 
+}
+.none {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 60px;
+    font-size: 17px;
+  }
+  li{
+    margin-bottom: 10px;
+  }
+.cardList{
+    display: flex; 
+    margin:0 auto;
+    justify-content: space-evenly;
+     align-items: center;
+}
+.card:nth-child(3) .none{margin-bottom: 30px;}
+.card:nth-child(2) {height:80vh}
+.card:nth-child(2) .price__digits {font-size: 64px;}
+.card:nth-child(2) .info {margin-top: 36px; margin-bottom: 36px;}
+.card:nth-child(2) .none {margin-bottom: 46px}
+.card:nth-child(2) .extras li {margin-bottom: 16px;}
+  .card{
+    background-color: white;
+        padding: 20px 40px 32px 32px;
+        width:27vw;
+  }
+  img {object-fit: cover;
+    height:100%;
+    width:100%}
+    .Plan{
+        text-transform: uppercase;
+    }
+    .price {font-weight: 100;letter-spacing: 1px;
+        margin-top:30px}
+        
+        .price__digits {
+       font-weight: bold;
+        font-size: 60px
+    }
+
+.info{
+    font-size: 14px;
+    margin-top:30px; margin-bottom: 30px;}
+
+  .button{
+    border-radius: 4px; 
+    background-color: black; color:white;
+    padding:16px 32px;
+    border-width:0;
+    font-size:16px
+  }
